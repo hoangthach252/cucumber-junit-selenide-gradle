@@ -1,7 +1,9 @@
 # Automation Framework using Cucumber JVM6 + JUnit5 + Selenide + Gradle + Allure + logback
 
 A sample BDD Automation framework using Cucumber6, JUnit 5, Selenide, Gradle, Allure, logback.
+
 Support running tests in parallel and sharing data among test steps.
+
 Sample tests against Unsplash web app. 
 
 ## Libraries Used
@@ -84,7 +86,6 @@ failing test cases
 
 * Glue or steps classes `src/test/steps`
 * Feature files `src/resources/features`
-* Cucumber property file `src/resources/cucumber.properties`
 * Example of test runner `src/test/tests/testrunner/CukesTestRunner.java` for debugging or running in sequential
 * Test runner to run cucumber tests in parallel: gradle task `cucumber`
 
@@ -94,6 +95,7 @@ failing test cases
 You can find logback configuration here `src/test/resources/logback.xml`
 
 Current configuration contains two appenders:
+(default log level: INFO)
 
 * ConsoleAppender will output logs to system out stream
 * FileAppender will output logs to `build/logs/log.log` 
