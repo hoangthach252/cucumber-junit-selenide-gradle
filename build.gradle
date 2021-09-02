@@ -55,11 +55,14 @@ dependencies {
 
 }
 
+def threadsCount = System.getProperty("threads")
+def cucumberTags = System.getProperty("cucumberTags")
+
 cucumber {
-    threads = '3'
+    threads = threadsCount ? threadsCount : '1'
     glue = 'classpath:steps'
     plugin = ['pretty', 'io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm']
-    tags = ''
+    tags = cucumberTags ? cucumberTags : ''
     name = ''
     dryRun = ''
     snippets = ''
