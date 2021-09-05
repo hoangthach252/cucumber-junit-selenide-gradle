@@ -4,7 +4,6 @@
  * This is a general purpose Gradle build.
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.1.1/samples
  */
-import java.nio.charset.StandardCharsets
 
 plugins {
     id 'java'
@@ -13,12 +12,6 @@ plugins {
     id "se.thinkcode.cucumber-runner" version "0.0.8"
 }
 
-/*
-* Define extra properties for the project object - project.ext
-*/
-ext {
-    encoding = StandardCharsets.UTF_8.name()
-}
 
 // Versioning of dependencies
 def cucumberVersion = '6.11.0'

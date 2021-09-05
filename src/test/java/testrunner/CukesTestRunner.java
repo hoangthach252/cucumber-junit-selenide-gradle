@@ -14,6 +14,7 @@ To run tests in parallel , execute the task "cucumber"
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"steps"},
+        tags = "@regression",
         plugin = {
                 "pretty",
                 "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"

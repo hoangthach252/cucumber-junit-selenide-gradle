@@ -2,9 +2,9 @@
 
 A sample BDD Automation framework using Cucumber6, JUnit 5, Selenide, Gradle, Allure, logback.
 
-Support running tests in parallel and sharing data among test steps.
+Support running tests in parallel, sharing data among test steps and manage Page Objects using Dependency Injection.
 
-Sample tests against Unsplash web app. 
+Sample tests against [Unsplash](https://unsplash.com/) web app. 
 
 ## Libraries Used
 
